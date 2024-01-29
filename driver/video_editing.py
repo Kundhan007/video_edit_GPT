@@ -1,4 +1,5 @@
 import os
+from moviepy.editor import VideoFileClip,AudioFileClip
 
 app.config['UPLOAD_FOLDER_AUDIO'] = 'files_storage/audio'
 app.config['UPLOAD_FOLDER_VIDEO'] = 'files_storage/video'
@@ -24,6 +25,10 @@ def extract_video(video_mp4):
     pass
 
 def combine_video_audio(video_mp4, new_audio):
+    audio = AudioFileClip(new_audio)
+    video = VideoFileClip(video_mp4)
+    final_clip = video.set_audio(audio)
+    final_clip.write_videofile(file,fps=60)
     pass
 
 
@@ -60,3 +65,20 @@ def clip_video_trim():
                 return "Video trimmed"
             else:
                 return "No mp4 file found" 
+
+
+# merge the video file with new audio file
+@app.route('/modify_video_new_audio', methods=['GET',"POST"])
+def modify_video_new_audio():
+    folder_video = app.config['UPLOAD_FOLDER_VIDEO']
+    folder_audio = app.config['UPLOAD_FOLDER_VIDEO']
+    for file in os.listdir(folder_video):
+        video_full_path = os.path.join(folder_video, file)
+        video_file_name = os.path.splitext(file)[0]
+    for file in os.listdir(folder_video):
+        audio_full_path = os.path.join(folder_audio, file)
+        audio_file_name = os.path.splitext(file)[0]
+    clip = VideoFileClip(video_file_name).set_audio(AudioFileClip(audio_file_name))
+    new_file = os.path.join(folder,file_name + ".mp4")
+    new_clip = clip.write_videofile(new_file, fps =60)
+    return "Video merged with new audio "
