@@ -1,0 +1,27 @@
+{
+  "id": "chatcmpl-8mQEVQyYYUXbpHKQcrRygvykuuK80",
+  "object": "chat.completion",
+  "created": 1706551275,
+  "model": "gpt-3.5-turbo-0613",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "clip_video",
+          "arguments": "{\n  \"seconds\": 3,\n  \"front\": true\n}"
+        }
+      },
+      "logprobs": null,
+      "finish_reason": "function_call"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 164,
+    "completion_tokens": 21,
+    "total_tokens": 185
+  },
+  "system_fingerprint": null
+}
