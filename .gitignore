@@ -2,3 +2,5 @@
 .idea/inspectionProfiles/profiles_settings.xml
 .idea/*
 cred.json
+.DS_Store
+__pycache__/util.cpython-310.pyc
