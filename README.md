@@ -31,4 +31,7 @@ iteration 1:
     - implementing driver functions (nitin functions)
     - testing with video, audio input
     - postman testing for downloading the output file
-    - 
+
+
+# Sequence Diagram :
+![WhatsApp Image 2024-01-28 at 4 56 38 PM](https://github.com/Kundhan007/video_edit_GPT/assets/27908778/eaeaa785-0ba2-4ab7-a8f7-ad85dcb68cdb)
