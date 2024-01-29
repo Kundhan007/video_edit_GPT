@@ -17,3 +17,8 @@ iteration 1:
         - return video component of the video audio is removed
     - def combine_video_audio(video_mp4, new_audio)
         - return combined video and audio
+
+# request handling functions:
+    - def video_audio_upload():
+        - post request that will take the video
+        - post request that will take the audio
