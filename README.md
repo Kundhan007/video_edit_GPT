@@ -7,3 +7,13 @@ Here is Video foo.mp4. Here is new Audio stream. Clip Video first 3 seconds off 
 
 iteration 1: 
     - objective statement
+    - happy flow only
+
+# driver function:
+    - def clip_video(video_mp4, seconds, front = True)
+        - return clipped video
+        - front or back will depend on the flag front
+    - def extract_video(video_mp4)
+        - return video component of the video audio is removed
+    - def combine_video_audio(video_mp4, new_audio)
+        - return combined video and audio
