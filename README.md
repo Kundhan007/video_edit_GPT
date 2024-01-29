@@ -24,3 +24,11 @@ iteration 1:
         - post request that will take the audio
     - def download_video:
         - get call with video id(mostly session)
+
+# todo
+    - open ai function handling and testing
+    - connecting to the real functions
+    - implementing driver functions (nitin functions)
+    - testing with video, audio input
+    - postman testing for downloading the output file
+    - 
