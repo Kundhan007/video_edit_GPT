@@ -1,6 +1,6 @@
 
 
-def clip_video(video_mp4, seconds, front=False):
+def clip_video(video_mp4, seconds, front=True):
     pass
 
 def extract_video(video_mp4):
