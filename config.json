@@ -23,7 +23,7 @@
               "description": "video file on which editing is done"
             },
             "seconds": {
-              "type": "int",
+              "type": "integer",
               "description": "no of seconds require to trim the video"
             },
             "front": {
@@ -54,8 +54,8 @@
         }
       },
       {
-        "name": "combine video and audio",
-        "description": "combine video(with no audio) with new audio",
+        "name": "combine_video_audio",
+        "description": "combine existing video with new audio",
         "parameters": {
           "type": "object",
           "properties": {
