@@ -1,11 +1,11 @@
 OpenAI GPT App model:
  
-Imagine Acme Video Service that has a RestAPI interface:
+Imagine Video Service that has a RestAPI interface:
 Here is simplified Pseudo code for exercise purposes here (in reality it is actually described as RestAPI)
 1. Initial load of Video (in .mp4 format)
 Int handle openVideo(String videoname)
    
-2. Clip front of rear of Video
+2. Clip front or rear of Video
 bool status  clip_video(int handle, int seconds_from_front_of_video = 0, int seconds_from _end_of_video=0)
 Non 0 seconds indicate no of seconds of Video to clip (front or back)
  
