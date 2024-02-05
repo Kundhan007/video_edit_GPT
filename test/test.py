@@ -4,7 +4,6 @@ from moviepy.editor import VideoFileClip, AudioFileClip
 
 # <--- Functions  ---->
 
-# Working
 # Input: Audio file  -> Output: Clipped Audio file
 def clip_audio(audio_file, start_trim, end_trim):
     clip = AudioFileClip(audio_file).subclip(t_start=start_trim, t_end=end_trim)
@@ -12,7 +11,6 @@ def clip_audio(audio_file, start_trim, end_trim):
     return
 
 
-# Working
 # Input : Any Audio Type -> Output: Audio with .mp3 Type
 def audio_convert(audio_file):
     clip = AudioFileClip(audio_file)
@@ -20,7 +18,6 @@ def audio_convert(audio_file):
     return
 
 
-# Working
 # Input: Video with Audio  -> Output : Audio
 def extract_audio(video_file):
     VideoFileClip(video_file).audio.write_audiofile(
@@ -28,7 +25,6 @@ def extract_audio(video_file):
     return
 
 
-# Working
 # Input: Video, Audio file -> Output: Video file with audio merged
 def combine_video_audio(audio_file, video_file):
     audio = AudioFileClip(audio_file)
@@ -38,7 +34,6 @@ def combine_video_audio(audio_file, video_file):
     return
 
 
-# Working
 # Input: Any Video Type -> Output: Video with .mp4 Type
 def video_convert(video_file):
     clip = VideoFileClip(video_file)
@@ -46,7 +41,6 @@ def video_convert(video_file):
     return
 
 
-# Working
 # Input: Video with Audio  -> Output : Video without Audio
 def extract_video(video_file):
     clip = VideoFileClip(video_file).without_audio()
@@ -54,7 +48,6 @@ def extract_video(video_file):
     return
 
 
-# Working 
 # Input: Video file  -> Output: Clipped Video file
 def clip_video(video_file, start_trim, end_trim):
     clip = VideoFileClip(video_file).subclip(t_start=start_trim, t_end=end_trim)
