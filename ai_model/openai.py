@@ -23,6 +23,7 @@ start the function with initial variables
 if necessary, give output of one function to other create variables
 give function calls in json also include output variable in json for each function
 output json should have 3 parts: function name, input parameters, output variable name
+anywhere you need to use true or false replace them with 1 and 0
 return expectation:
 list of function calls that will satisfy the user statement
 
