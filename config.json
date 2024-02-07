@@ -38,6 +38,31 @@
         }
       },
       {
+        "name": "clip_audio",
+        "description": "trim or cut the audio to the given amount of seconds and direction",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "audio": {
+              "type": "object",
+              "description": "audio file to edit"
+            },
+            "seconds": {
+              "type": "integer",
+              "description": "no of seconds require to trim the audio"
+            },
+            "front": {
+              "type": "boolean",
+              "description": "direction in which trim applied if true front of audio is trimmed and viceversa"
+            }
+          },
+          "required": [
+            "audio",
+            "seconds"
+          ]
+        }
+      },
+      {
         "name": "extract_video",
         "description": "extract video component from video file without audio",
         "parameters": {
