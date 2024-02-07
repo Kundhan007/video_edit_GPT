@@ -1,4 +1,5 @@
-
+def clip_audio_front(audio_mp3, seconds, front=True):
+    pass
 
 
 def clip_video_front(video_mp4, seconds, front=True):
@@ -7,9 +8,7 @@ def clip_video_front(video_mp4, seconds, front=True):
 
 def extract_video(video_mp4):
     pass
-    
+
 
 def combine_video_audio(video_mp4, new_audio):
-   
     pass
-
