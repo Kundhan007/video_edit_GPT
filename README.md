@@ -68,3 +68,46 @@ iteration 1:
   }
 ]
 ```
+
+
+next commits
+mock statments for driver functions
+implementing algorithm
+
+
+input from user:
+    - user prompt
+    - video and audio files(optional)
+
+user prompt will go to open ai:
+    - includes userprompt
+    - available functions
+    - instructions
+    - expected results
+
+this will generate a algorithm in the form of json list of pseudo
+
+this json list will be converted to actual python algorithm code
+
+this python alg will be attached to our driver functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
