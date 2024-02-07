@@ -35,3 +35,36 @@ iteration 1:
 
 # Sequence Diagram :
 ![WhatsApp Image 2024-01-28 at 4 56 38 PM](https://github.com/Kundhan007/video_edit_GPT/assets/27908778/eaeaa785-0ba2-4ab7-a8f7-ad85dcb68cdb)
+
+
+# sample output from gpt
+``` json
+[
+  { 
+    "function_name": "trim_video",
+    "input_parameters": {
+      "video": "video_var",
+      "seconds": 3,
+      "front": true
+    },
+    "output_variable_name": "trimmed_video"
+  },
+  {
+    "function_name": "trim_audio",
+    "input_parameters": {
+      "audio": "audio_var",
+      "seconds": 3,
+      "front": true
+    },
+    "output_variable_name": "trimmed_audio"
+  },
+  {
+    "function_name": "combine_audio_video",
+    "input_parameters": {
+      "audio": "trimmed_audio",
+      "video": "trimmed_video"
+    },
+    "output_variable_name": "combined_video"
+  }
+]
+```
